@@ -1,152 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Abhishek Nair – Software Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #111;
-      line-height: 1.6;
-    }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 4px;
-    }
-    .contact {
-      font-size: 14px;
-      color: #444;
-    }
-    h2 {
-      margin-top: 32px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 4px;
-      font-size: 20px;
-    }
-    .item {
-      margin-top: 16px;
-    }
-    .title-row {
-      display: flex;
-      justify-content: space-between;
-      font-weight: 600;
-    }
-    .subtitle {
-      font-style: italic;
-      font-size: 14px;
-      color: #444;
-    }
-    ul {
-      margin-top: 8px;
-    }
-    li {
-      margin-bottom: 6px;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="UTF-8" />
+<title>Abhishek Nair – Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- PAGE ---------- */
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.25;
+}
+
+.page {
+  width: 8.5in;
+  margin: 0.5in auto;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 26px;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.contact {
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.contact a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* ---------- SECTIONS ---------- */
+.section {
+  margin-top: 14px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid #000;
+  margin-bottom: 6px;
+}
+
+/* ---------- ENTRIES ---------- */
+.entry {
+  margin-bottom: 8px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.subrow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-size: 11px;
+  font-style: italic;
+}
+
+/* ---------- BULLETS ---------- */
+ul {
+  list-style: none;
+  margin-left: 14px;
+  margin-top: 4px;
+}
+
+li {
+  font-size: 11px;
+  margin-bottom: 3px;
+  position: relative;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: -10px;
+  font-size: 9px;
+  top: 2px;
+}
+
+/* ---------- LINKS ---------- */
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- SKILLS ---------- */
+.skills p {
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 900px) {
+  .page {
+    width: 95%;
+    margin: 20px auto;
+  }
+}
+</style>
 </head>
+
 <body>
+<div class="page">
 
-<h1>Abhishek Nair</h1>
-<div class="contact">
-  Bangalore ·
-  <a href="mailto:abhisheknair616@gmail.com">abhisheknair616@gmail.com</a> ·
-  <a href="https://linkedin.com/in/abhisheknair">LinkedIn</a> ·
-  <a href="https://github.com/hea7hen">GitHub</a> ·
-  <a href="https://preview--artistic-arsenal.lovable.app/">Portfolio</a>
-</div>
-
-<h2>Experience</h2>
-
-<div class="item">
-  <div class="title-row">
-    <span>Software Engineering Intern | Subscribili</span>
-    <span>May 2025 – Oct 2025</span>
+<!-- HEADER -->
+<div class="header">
+  <h1>Abhishek Nair</h1>
+  <div class="contact">
+    7349723145 |
+    <a href="mailto:abhisheknair616@gmail.com">abhisheknair616@gmail.com</a> |
+    <a href="https://linkedin.com/in/abhisheknair">linkedin</a> |
+    <a href="https://github.com/hea7hen">github</a> |
+    <a href="https://preview--artistic-arsenal.lovable.app/">portfolio</a> |
+    Bangalore
   </div>
-  <div class="subtitle">Healthcare Technology Startup · Onsite</div>
-  <ul>
-    <li>Built a multi-tenant web platform using Strapi CMS with PostgreSQL, supporting Spanish and Mexican Spanish locales.</li>
-    <li>Integrated Affirm BNPL via Stripe API with React/Redux state management.</li>
-    <li>Developed a real-time EMR monitoring system (Dentrix, Eaglesoft, OpenDental) using Python, AWS EventBridge, SQS, and SendGrid, reducing manual monitoring by 90%.</li>
-    <li>Designed a secure AWS credential management system using Secrets Manager, KMS, IAM, and ECS Fargate (HIPAA-compliant).</li>
-    <li>Built a self-service client portal reducing plan creation time to under 15 minutes.</li>
-  </ul>
 </div>
 
-<div class="item">
-  <div class="title-row">
-    <span>Academy Representative | Robin Hood Army (RHA)</span>
-    <span>Feb 2025 – Present</span>
+<!-- EXPERIENCE -->
+<div class="section">
+  <div class="section-title">Experience</div>
+
+  <div class="entry">
+    <div class="row">
+      <div>Software Engineering Intern | Subscribili</div>
+      <div>May 2025 – Oct 2025</div>
+    </div>
+    <div class="subrow">
+      <div>Healthcare Technology Startup</div>
+      <div>Onsite</div>
+    </div>
+    <ul>
+      <li>Designed and implemented a multi-tenant web application using Strapi CMS with Spanish and Mexican Spanish locale support; migrated SQLite to PostgreSQL.</li>
+      <li>Integrated Affirm BNPL using Stripe API with React/Redux state handling.</li>
+      <li>Built real-time EMR monitoring for Dentrix, Eaglesoft, OpenDental using Python, AWS EventBridge, SQS, and SendGrid, reducing manual monitoring by 90%.</li>
+      <li>Designed AWS credential management using Secrets Manager, KMS, IAM, ECS Fargate (HIPAA-compliant).</li>
+      <li>Built self-service client portal reducing plan setup time to under 15 minutes.</li>
+    </ul>
   </div>
-  <div class="subtitle">Non-Profit Organization · Bangalore</div>
-  <ul>
-    <li>Manage the academic wing of RHA Bangalore under the Robin Hood Academy initiative.</li>
-    <li>Program has empowered 7,328+ students and enabled 12,348+ school admissions across India.</li>
-    <li>Teach mathematics at Government School, Appareddy Palaya, and coordinate with volunteers and administrators.</li>
-  </ul>
+
+  <div class="entry">
+    <div class="row">
+      <div>Academy Representative | Robin Hood Army (RHA)</div>
+      <div>Feb 2025 – Present</div>
+    </div>
+    <div class="subrow">
+      <div>Non-Profit Organization</div>
+      <div>Bangalore, India</div>
+    </div>
+    <ul>
+      <li>Managed academic wing of RHA Bangalore under Robin Hood Academy.</li>
+      <li>Program empowered 7,328+ students and enabled 12,348+ admissions across India.</li>
+      <li>Taught mathematics at Government School, Appareddy Palaya and coordinated volunteers.</li>
+    </ul>
+  </div>
 </div>
 
-<h2>Projects</h2>
+<!-- PROJECTS -->
+<div class="section">
+  <div class="section-title">Projects</div>
 
-<div class="item">
-  <strong>GYMMER — Gym Discovery Platform</strong> (Dec 2024)
-  <ul>
-    <li>Gym discovery platform for Bangalore with 90+ verified gyms.</li>
-    <li>Subscription paywall using Razorpay with webhook validation.</li>
-    <li>React, TypeScript, Vite frontend; Firebase backend.</li>
-    <li>Admin dashboard with CSV import/export and analytics.</li>
-    <li>
-      <a href="https://gymmer-pied.vercel.app">Live Demo</a> ·
-      <a href="https://github.com/hea7hen/Gymmer">Source</a>
-    </li>
-  </ul>
+  <div class="entry">
+    <div class="row">
+      <div>GYMMER — Gym Discovery Platform</div>
+      <div>Dec 2024</div>
+    </div>
+    <ul>
+      <li>Gym discovery platform for Bangalore featuring 90+ verified gyms.</li>
+      <li>Subscription paywall using Razorpay with webhook validation.</li>
+      <li>React, TypeScript, Vite frontend with Firebase backend.</li>
+      <li>
+        Live: <a href="https://gymmer-pied.vercel.app">gymmer-pied.vercel.app</a> |
+        Source: <a href="https://github.com/hea7hen/Gymmer">GitHub</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <div>SnackDash — Campus Food Delivery</div>
+      <div>Jun 2025</div>
+    </div>
+    <ul>
+      <li>Peer-to-peer campus food delivery platform.</li>
+      <li>Built with Next.js and Firebase with real-time order tracking.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <div>Book Certification Platform</div>
+      <div>Dec 2024</div>
+    </div>
+    <ul>
+      <li>Issued verifiable digital book completion certificates.</li>
+      <li>
+        Live: <a href="https://u4rsnob0spemqbtx.vercel.app">Demo</a> |
+        Source: <a href="https://github.com/hea7hen/BookCert">GitHub</a>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="item">
-  <strong>SnackDash — Campus Food Delivery</strong> (Jun 2025)
-  <ul>
-    <li>Peer-to-peer campus food delivery platform.</li>
-    <li>Built with Next.js and Firebase.</li>
-    <li>Real-time order tracking, courier matching, and notifications.</li>
-  </ul>
+<!-- SKILLS -->
+<div class="section skills">
+  <div class="section-title">Technical Skills</div>
+  <p><strong>Languages:</strong> JavaScript, Python, Java, C/C++, SQL, HTML/CSS, R</p>
+  <p><strong>Cloud:</strong> AWS (ECS, Fargate, EventBridge, SQS, Secrets Manager, IAM), Terraform, Docker</p>
+  <p><strong>Frameworks:</strong> React, Redux, Node.js, Strapi, Flask, FastAPI</p>
+  <p><strong>Databases & APIs:</strong> PostgreSQL, SQLite, Firestore, Stripe API, SendGrid API</p>
+  <p><strong>Tools:</strong> Git, GitHub Actions, Postman, VS Code, IntelliJ</p>
 </div>
 
-<div class="item">
-  <strong>Book Certification Platform</strong> (Dec 2024)
-  <ul>
-    <li>Issued verifiable digital book completion certificates.</li>
-    <li>Secure salted verification codes with timestamp validation.</li>
-    <li>
-      <a href="https://u4rsnob0spemqbtx.vercel.app">Live Demo</a> ·
-      <a href="https://github.com/hea7hen/BookCert">Source</a>
-    </li>
-  </ul>
+<!-- EDUCATION -->
+<div class="section">
+  <div class="section-title">Education</div>
+  <div class="entry">
+    <div class="row">
+      <div>RV University — B.Sc. Computer Science (Fintech Minor)</div>
+      <div>2023 – 2027</div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="row">
+      <div>Kendriya Vidyalaya — Primary & Higher Secondary</div>
+      <div>2010 – 2022</div>
+    </div>
+  </div>
 </div>
 
-<h2>Technical Skills</h2>
-<ul>
-  <li><strong>Languages:</strong> JavaScript, Python, Java, C/C++, SQL, HTML/CSS, R</li>
-  <li><strong>Cloud:</strong> AWS (ECS, Fargate, EventBridge, SQS, Secrets Manager, IAM), Terraform, Docker</li>
-  <li><strong>Frameworks:</strong> React, Redux, Node.js, Strapi, Flask, FastAPI, Playwright</li>
-  <li><strong>Databases:</strong> PostgreSQL, SQLite, Firestore</li>
-  <li><strong>Tools:</strong> Git, GitHub Actions, Postman, VS Code, IntelliJ</li>
-</ul>
-
-<h2>Education</h2>
-<ul>
-  <li><strong>RV University</strong> — BSc Computer Science (Fintech Minor), 2023–2027</li>
-  <li><strong>Kendriya Vidyalaya</strong> — Primary & Higher Secondary, 2010–2022</li>
-</ul>
-
+</div>
 </body>
 </html>
